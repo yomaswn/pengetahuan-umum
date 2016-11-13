@@ -1,0 +1,60 @@
+body {
+    background: url("background.jpg") no-repeat center fixed;
+	background-size: 100%;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+	border-radius: 8px;
+    color: white;
+	cursor: pointer;
+	display: inline-block;
+    font-size: 16px;
+	font-weight:bold;
+    margin: 4px 2px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.body{
+	background-color: white;
+	border-radius: 20px;
+	box-sizing: border-box;
+	display: block;
+	font-family: Arial;
+	font-weight: bold;
+	margin: 50px;
+	margin-left: auto;
+    margin-right: auto;
+	padding: 20px;
+	text-align: center;
+	width:40%;
+}
+
+.isi{
+	background-color: rgb(61, 68, 78);
+	border-radius: 20px;
+	box-sizing: border-box;
+	display: block;
+	font-family: Arial;
+	font-size: 14px;
+	margin: 10px;
+	margin-left: auto;
+    margin-right: auto;
+	padding: 10px;
+	text-align: center;
+}
+
+.isi p, h3{
+	color: white;
+}
+
+img{
+	border-radius: 20px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 40%;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<script>
+		function kuis() {
+		var benar = 0;
+		var salah = 0;
+		var jawab = '';
+		var soal = [
+			'Ilmu yang mempelajari penampilan fisik makhluk hidup adalah?',
+			'Binatang yang bisa hidup di air dan di darat disebut...',
+			'Siapakah penemu telepon?',
+			'Apa nama umum dari simbol elemen Cu?',
+			'Angkor Wat terletak di negara...',
+			'Burung tercepat di dunia adalah?',
+			'Berasal dari manakah Pahlawan Nasional Tuanku Imam Bonjol?',
+			'Binatang yang bukan merupakan reptil...',
+			'Besaran bunyi adalah?',
+			'Patung Liberty dibuat di negara...'
+		]
+		var pilihan = [
+			'\na. Anatomi\nb. Morfologi\nc. Botani\nd. Mikologi',
+			'\na. Mamalia\nb. Serangga\nc. Amphibia\nd. Reptil',
+			'\na. Alexander Graham Bell\nb. Galileo Galilei\nc. Thomas Edison\nd. Antonio Meucci',
+			'\na. Besi\nb. Air\nc. Raksa\nd. Tembaga',
+			'\na. Vietnam\nb. Thailand\nc. Kamboja\nd. Singapura',
+			'\na. Falcon\nb. Elang\nc. Merpati\nd. Rajawali',
+			'\na. Jawa Timur\nb. Maluku\nc. Jawa Tengah\nd. Sumatera Barat',
+			'\na. Ular\nb. Katak\nc. Buaya\nd. Kura-kura',
+			'\na. Hertz\nb. Tesla\nc. Desibel\nd. Joule',
+			'\na. Amerika\nb. Prancis\nc. Belanda\nd. Jerman'
+		]
+		var jawabanBenar =['b', 'c', 'd', 'd', 'c', 'a', 'd', 'b', 'c', 'b']
+		for (i=0 ; i < soal.length ; i++){
+			jawab = prompt(soal[i]+pilihan[i]);
+			if (jawab === jawabanBenar[i]){
+				benar++;
+			}
+			else { salah++;}
+		}	
+		document.getElementById("hasil").innerHTML = 'Total jawaban anda adalah<br>Benar: '+benar+'<br>Salah: '+salah;
+		}
+		</script>
+		<title>Week2Day5</title>
+	<head>
+	<body>
+		<div class="body">
+			<h1>Kuis Pengetahuan Umum</h1>
+		<div class="isi">
+			<h3>Cara Bermain</h3>
+			<p>Klik tombol "Mulai" untuk memulai kuis. Silahkan menjawab pertanyaan sesuai dengan jawaban yang anda anggap benar dengan mengetik abjad pada tiap jawaban. Formatnya adalah dengan mengetik "a", "b", "c", atau "d". Selain dengan format tersebut maka jawaban anda akan dianggap salah.</p>
+			<button class="button" onclick="kuis()">Mulai</button>
+		</div>
+			<p id="hasil"></p>
+		</div>
+		<img src="banner.png" alt="hacktiv">
+	</body>
+</html>

@@ -1,0 +1,16 @@
+TENTUKAN 'benar' sama dengan 0
+TENTUKAN 'salah' sama dengan 0
+SIMPAN karakter kosong pada 'jawab'
+SIMPAN array pertanyaan pada 'soal'
+SIMPAN array pilihan jawaban pada 'pilihan'
+SIMPAN array jawaban benar pada 'jawabanBenar'
+FOR setiap pertambahan 1 'index' dari 0 sampai panjang array 'soal'
+	TAMPILKAN array 'soal' dan array 'pilihan' berdasarkan index
+	SIMPAN jawaban yang diberikan pada 'jawab'
+	IF 'jawab' sama dengan data pada index array 'jawabanBenar'
+		TAMBAHKAN 1 pada 'benar'
+	ELSE
+		TAMBAHKAN 1 pada 'salah'
+	ENDIF
+ENDFOR
+TAMPILKAN Total jawaban anda adalah Benar: 'benar' Salah: 'salah'
